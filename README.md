@@ -1,6 +1,7 @@
 # Augmented-Smart-dataset
 
-This repository is part of the paper: Título do artigo, where we evaluated the federated learning procedure for training ML algorithms to forecast consumers' energy power consumption. In the paper we use a modified version of the Smart* dataset[1] and the Building Data Genome Project 2 dataset[2]. In the paper we used a modified version the Smart* dataset where take the average of the measurements for the three houses (A, B, C) in a time window of 15 minutes.
+This repository is a part of the paper titled *Forecasting Energy Power Consumption using
+Federated Learning in Edge Computing Devices*, in which we evaluated the federated learning procedure for training machine learning algorithms to forecast consumers' energy power consumption. For this study, we used a modified version of the Smart* dataset[1] and the Building Data Genome Project 2 dataset[2]. In the case of the Smart* dataset, we computed the average of the measurements for three houses (A, B, C) in a time window of 15 minutes.
 
 As a contribution, we also made available a augmented version of the Smart* dataset in this repository. This version contains seven new houses (D, E, F, G, H, I, J) and is generated from the three original houses as such: D, E, and F (from House A), G and H (from House B), and I and J (from House C). 
 
@@ -14,6 +15,22 @@ The generation process consists of training a Deep Generative Model, based on Ge
 | 2012-04-30 09:15:00 | 317.61853 |
 | 2012-04-30 09:30:00 | 595.5591  |
 | 2012-04-30 09:45:00 | 358.95502 |
+
+## Datasets plots
+
+**House E**
+
+![House E](plots/E.png)
+
+**House G**
+
+![House E](plots/G.png)
+
+
+**House I**
+
+![House E](plots/I.png)
+
 
 # References:
 
