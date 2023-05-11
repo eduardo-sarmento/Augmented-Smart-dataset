@@ -3,9 +3,9 @@
 This repository is a part of the paper titled *Forecasting Energy Power Consumption using
 Federated Learning in Edge Computing Devices*, in which we evaluated the federated learning procedure for training machine learning algorithms to forecast consumers' energy power consumption. For this study, we used a modified version of the Smart* dataset[1] and the Building Data Genome Project 2 dataset[2]. In the case of the Smart* dataset, we computed the average of the measurements for three houses (A, B, C) in a time window of 15 minutes.
 
-As a contribution, we also made available a augmented version of the Smart* dataset in this repository. This version contains seven new houses (D, E, F, G, H, I, J) and is generated from the three original houses as such: D, E, and F (from House A), G and H (from House B), and I and J (from House C). 
+As a contribution, we have also made an augmented version of the Smart* dataset available in this repository. This version contains seven new houses (D, E, F, G, H, I, J), which were generated from the three original houses as follows: D, E, and F (from House A); G and H (from House B); and I and J (from House C).
 
-The generation process consists of training a Deep Generative Model, based on Generative Adversarial Networks (GANs)[3], known as TimeGAN[4], for a given number of steps and evaluating how the generated data compare to the original ones. For example, it is desirable that the synthetic data have the main characteristics (e.g., trends and seasonality) of the real data, such as possible peak hours or times with less use. However, to guarantee the necessary variability to evaluate the generalization of the models, it is also desirable that the synthetic and real data are somewhat distinct. It is important to point out that, when evaluating GANs, measuring the similarity between synthetic and real data is still an open problem ([5],[6]), especially when dealing with time series[7]. When possible, a commonly used method of evaluation is to visually compare the similarity between synthetic and real data.
+The generation process involves training a Deep Generative Model, specifically a TimeGAN based on Generative Adversarial Networks (GANs)[3], for a given number of steps and evaluating the similarity of the generated data with the original dataset. Ideally, the synthetic data should exhibit the main characteristics (e.g., trends and seasonality) of the real data, such as peak usage hours and less busy periods. However, to evaluate the generalization of the models, it is also important that the synthetic and real data are somewhat distinct. It is worth noting that, measuring the similarity between synthetic and real data is still an open problem when evaluating GANs ([5],[6]), especially when dealing with time series[7]. When possible, a commonly used method of evaluation is to visually compare the similarity between synthetic and real data.
 
 # Datasets Sample (House D)
 
@@ -18,16 +18,22 @@ The generation process consists of training a Deep Generative Model, based on Ge
 
 ## Datasets plots
 
-**House E**
+<div align="center">
+  House E
+</div>
 
 ![House E](plots/E.png)
 
-**House G**
+<div align="center">
+  House G
+</div>
 
 ![House E](plots/G.png)
 
 
-**House I**
+<div align="center">
+  House I
+</div>
 
 ![House E](plots/I.png)
 
